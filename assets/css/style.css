@@ -7620,7 +7620,6 @@
   opacity: 1;
 }
 .steps-info {
-  width: 50%;
   margin-bottom: 30px;
   padding: 5px 56px 16px;
   -webkit-box-flex: 0;
@@ -7628,4 +7627,11 @@
   -ms-flex: 0 auto;
   flex: 0 auto;
   text-align: left;
+}
+@media screen and (max-width: 479px){
+  .steps-info {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
 }
