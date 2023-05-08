@@ -5208,15 +5208,7 @@
       color: #fff;
     }
 
-    .steps-info {
-      margin-bottom: 30px;
-      padding: 5px 56px 16px;
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 auto;
-      -ms-flex: 0 auto;
-      flex: 0 auto;
-      text-align: left;
-    }
+
 
     a:hover {
       color: #05160c;
@@ -5259,12 +5251,7 @@
       }
     }
 
-    @media screen and (max-width: 479px) {
-      .steps-info {
-        padding-right: 10%;
-        padding-left: 10%;
-      }
-    }
+    
 
     @media (min-width: 480px) and (max-width: 767px) {
       .steps-info {
