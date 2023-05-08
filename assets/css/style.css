@@ -7619,3 +7619,13 @@
   display: flex;
   opacity: 1;
 }
+.steps-info {
+  width: 50%;
+  margin-bottom: 30px;
+  padding: 5px 56px 16px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  text-align: left;
+}
