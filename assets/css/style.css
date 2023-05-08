@@ -5251,7 +5251,7 @@
       }
     }
 
-    
+
 
     @media (min-width: 480px) and (max-width: 767px) {
       .steps-info {
@@ -7607,6 +7607,7 @@
   opacity: 1;
 }
 .steps-info {
+  width: 50%;
   margin-bottom: 30px;
   padding: 5px 56px 16px;
   -webkit-box-flex: 0;
@@ -7617,6 +7618,7 @@
 }
 @media screen and (max-width: 479px){
   .steps-info {
+    width: 100% ;
     padding-right: 10%;
     padding-left: 10%;
 }
