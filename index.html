@@ -19,6 +19,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
 
+  <!-- Include Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -189,12 +192,12 @@
   <div class="framefrist">
     <div class="container-fluid pt-5 pb-3">
       <div class="row px-xl-5">
-        <div class="col-md-7">
-          <div class="product-offer mb-30 " style="height: 350px;">
+        <div class="col-md-8">
+          <div class="product-offer mb-30 " style="height: 400px;">
             <img class="img-fluid" src="assets/img/image/bnb A frame.jpg" alt="">
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
           <div class="product-offer mb-30" style="height: 300px;">
             <div class="offer-text">
               <h1 class="">Hosta Retreats</h1>
@@ -310,9 +313,7 @@
         </a>
       </div>
       <div class="feature-block">
-        <img
-          src="./assets/img/image/Icon3.svg"
-          width="64" alt="" class="feature-icon">
+        <img src="./assets/img/image/Icon3.svg" width="64" alt="" class="feature-icon">
         <ion-icon name="toggle" width="64"></ion-icon>
         <h5>24/7 Hands-On Approach</h5>
         <p class="paragraph-small">Communication with guests, daily price optimization, check-ins, cleaning,
@@ -391,9 +392,8 @@
       <div class="side-frame">
         <div class="side-media">
           <a href="#" class="w-inline-block w-lightbox" aria-label="open lightbox" aria-haspopup="dialog">
-            <div class="frame"><img
-                src="https://global-uploads.webflow.com/5c8ef8a20fcf5aaed2c716f3/5ee2f048e8640a341289b569_Screen%20Shot%202020-06-11%20at%208.01.47%20PM.png"
-                srcset="https://global-uploads.webflow.com/5c8ef8a20fcf5aaed2c716f3/5ee2f048e8640a341289b569_Screen%20Shot%202020-06-11%20at%208.01.47%20PM-p-500.png 500w, https://global-uploads.webflow.com/5c8ef8a20fcf5aaed2c716f3/5ee2f048e8640a341289b569_Screen%20Shot%202020-06-11%20at%208.01.47%20PM.png 674w"
+            <div class="frame"><img style="max-height: 350px;" src="./assets/img/image/Vancouver.jpg"
+                srcset="./assets/img/image/Vancouver.jpg 500w, ./assets/img/image/Vancouver.jpg 674w"
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 43vw, (max-width: 991px) 44vw, 42vw"
                 alt="Luxury AirBnB Property Management Service in Vancouver, Whistler, Kelowna, and Tofino. Short Term Rental Management Vancouver. AirBnB Management Companies."
                 class="frame-image"></div>
@@ -438,22 +438,34 @@
     <div class="wrapper">
       <div class="facts">
         <div class="fact-center number">
-          <div class="fact-line-text moving">3000+</div>
+          <div class="fact-line-text moving">
+
+            <span id="counter" class="animate__animated"></span>+
+
+          </div>
           <div class="fact-divider"></div>
           <h5 class="fact-header">Happy Guests</h5>
         </div>
         <div class="fact-center number">
-          <div class="fact-line-text moving">1000+</div>
+          <div class="fact-line-text moving">
+            <span id="counter2" class="animate__animated2"></span>+
+          </div>
           <div class="fact-divider"></div>
           <h5 class="fact-header">Check-Ins Completed</h5>
         </div>
         <div class="fact-center number">
-          <div class="fact-line-text moving">15+</div>
+          <div class="fact-line-text moving">
+            <span id="counter3" class="animate__animated3"></span>+
+
+          </div>
           <div class="fact-divider"></div>
           <h5 class="fact-header">Team Members</h5>
         </div>
         <div class="fact-center number">
-          <div class="fact-line-text moving">999+</div>
+          <div class="fact-line-text moving">
+            <span id="counter4" class="animate__animated4"></span>+
+
+          </div>
           <div class="fact-divider"></div>
           <h5 class="fact-header">Cups of Coffee</h5>
         </div>
@@ -478,10 +490,9 @@
           style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 600ms ease 0s, transform 900ms ease 0s;">
           <div role="listitem" class="work-v5 w-dyn-item">
             <a href="#" data-ix="work-card" class="work-card-v5 w-inline-block">
-              <div class="work-card-v5-image"><img
-                  src="https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b4b3db123fb663fbbd9b4_FINAL.jpg"
-                  alt="" sizes="100vw"
-                  srcset="https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b4b3db123fb663fbbd9b4_FINAL-p-500.jpg 500w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b4b3db123fb663fbbd9b4_FINAL-p-800.jpg 800w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b4b3db123fb663fbbd9b4_FINAL-p-1080.jpg 1080w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b4b3db123fb663fbbd9b4_FINAL-p-1600.jpg 1600w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b4b3db123fb663fbbd9b4_FINAL.jpg 1840w"
+              <div class="work-card-v5-image"><img src="./assets/img/image/shutterstock_89116057.jpg" alt=""
+                  sizes="100vw" height="195px"
+                  srcset="./assets/img/image/shutterstock_89116057.jpg 500w, ./assets/img/image/shutterstock_89116057.jpg 800w, ./assets/img/image/shutterstock_89116057.jpg 1080w, ./assets/img/image/shutterstock_89116057.jpg 1600w, ./assets/img/image/shutterstock_89116057.jpg 1840w"
                   class="work-card-image">
                 <div class="work-card-info w-hidden-medium w-hidden-small w-hidden-tiny"
                   style="opacity: 0; display: none;">
@@ -495,10 +506,9 @@
           </div>
           <div role="listitem" class="work-v5 w-dyn-item">
             <a href="#" data-ix="work-card" class="work-card-v5 w-inline-block">
-              <div class="work-card-v5-image"><img
-                  src="https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023.jpg"
-                  alt="" sizes="100vw"
-                  srcset="https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023-p-500.jpg 500w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023-p-800.jpg 800w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023-p-1080.jpg 1080w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023-p-1600.jpg 1600w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023-p-2000.jpg 2000w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/630b5409cf47ce5f625f6ada_IMG%2023.jpg 2397w"
+              <div class="work-card-v5-image"><img src="./assets/img/image/Modern living room.jpg" alt="" sizes="100vw"
+                  height="195px"
+                  srcset="./assets/img/image/Modern living room.jpg 500w, ./assets/img/image/Modern living room.jpg 800w, ./assets/img/image/Modern living room.jpg 1080w, ./assets/img/image/Modern living room.jpg 1600w, ./assets/img/image/Modern living room.jpg 2000w, ./assets/img/image/Modern living room.jpg 2397w"
                   class="work-card-image"
                   style="transform-style: preserve-3d; transition: transform 400ms ease 0s; transform: scaleX(1.08) scaleY(1.08) scaleZ(1);">
                 <div class="work-card-info w-hidden-medium w-hidden-small w-hidden-tiny"
@@ -513,10 +523,9 @@
           </div>
           <div role="listitem" class="work-v5 w-dyn-item">
             <a href="#" data-ix="work-card" class="work-card-v5 w-inline-block">
-              <div class="work-card-v5-image"><img
-                  src="https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/622343acbbad28144df945d7_unnamed.jpg"
-                  alt="" sizes="100vw"
-                  srcset="https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/622343acbbad28144df945d7_unnamed-p-500.jpeg 500w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/622343acbbad28144df945d7_unnamed-p-800.jpeg 800w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/622343acbbad28144df945d7_unnamed-p-1080.jpeg 1080w, https://global-uploads.webflow.com/5c8ef8a20fcf5a71d4c71704/622343acbbad28144df945d7_unnamed.jpg 1284w"
+              <div class="work-card-v5-image"><img height="195px" src="./assets/img/image/Bnb stock.jpg" alt=""
+                  sizes="100vw"
+                  srcset="./assets/img/image/Bnb stock.jpg 500w, ./assets/img/image/Bnb stock.jpg 800w, ./assets/img/image/Bnb stock.jpg 1080w, ./assets/img/image/Bnb stock.jpg 1284w"
                   class="work-card-image"
                   style="transform-style: preserve-3d; transition: transform 400ms ease 0s; transform: scaleX(1.08) scaleY(1.08) scaleZ(1);">
                 <div class="work-card-info w-hidden-medium w-hidden-small w-hidden-tiny"
@@ -666,6 +675,63 @@
   <!-- six page -->
 
 
+
+  <!-- HTML element for counter animation -->
+
+  <script>
+    // Define start and end values for the counter animation
+    const startValue = 0;
+    const endValue = 3000;
+    const startValue2 = 0;
+    const endValue2 = 1000;
+    const startValue3 = 0;
+    const endValue3 = 15;
+    const startValue4 = 0;
+    const endValue4 = 999;
+    // Perform the counter animation
+    function animateCounter() {
+      let currentValue = startValue;
+      let currentValue2 = startValue2;
+      let currentValue3 = startValue3;
+      let currentValue4 = startValue4;
+      const counterElement = document.getElementById('counter');
+      const counterElement2 = document.getElementById('counter2');
+      const counterElement3 = document.getElementById('counter3');
+      const counterElement4 = document.getElementById('counter4');
+
+      const interval = setInterval(() => {
+        currentValue++;
+        counterElement.innerHTML = currentValue;
+        if (currentValue === endValue) {
+          clearInterval(interval);
+        }
+      }, 5);
+      const interval2 = setInterval(() => {
+        currentValue2++;
+        counterElement2.innerHTML = currentValue2;
+        if (currentValue2 === endValue2) {
+          clearInterval(interval2);
+        }
+      }, 5);
+      const interval3= setInterval(() => {
+        currentValue3++;
+        counterElement3.innerHTML = currentValue3;
+        if (currentValue3 === endValue3) {
+          clearInterval(interval3);
+        }
+      }, 20);
+      const interval4 = setInterval(() => {
+        currentValue4++;
+        counterElement4.innerHTML = currentValue4;
+        if (currentValue4 === endValue4) {
+          clearInterval(interval4);
+        }
+      }, 5);
+
+    }
+    // Trigger the counter animation when the page is loaded
+    window.onload = animateCounter;
+  </script>
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
