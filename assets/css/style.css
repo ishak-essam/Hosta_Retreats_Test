@@ -14,6 +14,10 @@
       color: #555555;
     }
 
+    :root {
+      --primary-color: #2eca6a;
+    }
+
     a {
       color: #000000;
       text-decoration: none;
@@ -649,7 +653,7 @@
 
     .navbar-default.navbar-trans .nav-link,
     .navbar-default.navbar-reduce .nav-link {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #000000;
       font-weight: 600;
       letter-spacing: 0.03em;
@@ -2204,10 +2208,6 @@
       overflow: hidden;
     }
 
-    .mb-30 {
-      margin-bottom: 30px;
-    }
-
     .product-offer img {
       position: absolute;
       width: 100%;
@@ -2221,7 +2221,7 @@
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
+      padding-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -2229,6 +2229,19 @@
       /* background: rgba(61, 70, 77, 0.5); */
       z-index: 1;
     }
+
+    .offer-text h1 {
+      margin: 10px 0 10px 0;
+    }
+
+    .offer-text h6 {
+      margin: 4px 0 4px 0;
+    }
+
+    .offer-text h4 {
+      margin: 10px 0 10px 0;
+    }
+
 
     .mb-3,
     .my-3 {
@@ -2374,6 +2387,8 @@
       display: block;
       width: auto;
       margin-top: 0;
+      color: var(--primary-color);
+
     }
 
     .center {
@@ -2430,12 +2445,7 @@
       box-shadow: 0 0 0 1px #e4e4e4;
     }
 
-    @media screen and (max-width: 991px) {
-      .feature-icon {
-        width: 48px;
-        margin-bottom: -8px;
-      }
-    }
+  
 
     .feature-icon {
       width: 64px;
@@ -3097,7 +3107,9 @@
         flex-basis: 30%
       }
 
-
+      .step h5 {
+        text-align: center;
+      }
 
       .square-play-button {
         width: 64px;
@@ -3446,7 +3458,7 @@
         line-height: 32px
       }
 
-      
+
 
       h4 {
         margin-top: 24px;
@@ -4023,7 +4035,8 @@
       }
 
       .paragraph-small.white-text {
-        color: #fff
+        color: #fff;
+        text-align: center;
       }
 
       .simple-review {
@@ -4159,6 +4172,11 @@
         line-height: 28px
       }
 
+      .w-input,
+      .button {
+        height: auto !important;
+      }
+
       figure {
         margin-top: 24px;
         margin-bottom: 24px
@@ -4182,10 +4200,6 @@
         margin-right: 10px;
         margin-bottom: 8px;
         margin-left: 10px
-      }
-
-      .button.ghost-white-button.margin-left-right {
-        font-size: 25px
       }
 
       .button.ghost-white-button.second {
@@ -4952,29 +4966,12 @@
       color: #fff;
     }
 
-    .w-button {
-      display: inline-block;
-      padding: 9px 15px;
-      background-color: #3898ec;
-      color: #fff;
-      border: 0;
-      line-height: inherit;
-      text-decoration: none;
-      cursor: pointer;
-      border-radius: 0
-    }
 
-    .button.ghost-white-button.margin-left-right {
-      font-size: 30px
-    }
+
 
     .button.top-margin {
       margin-top: 16px;
-      background-color: #f83f5a
-    }
-
-    .button.ghost-white-button.margin-left-right {
-      font-size: 25px
+      background-color: var(--primary-color)
     }
 
     .button.ghost-white-button.second {
@@ -4982,14 +4979,11 @@
       margin-left: 10px
     }
 
-    .button.margin-left-right {
-      margin-bottom: 20px;
-      font-size: 20px
-    }
+
 
     .button.margin-left-right {
-      margin-right: 10px;
-      margin-left: 10px
+
+      margin: 10px
     }
 
     /* button margin-left-right w-button */
@@ -5073,35 +5067,15 @@
       grid-row-end: 2;
     }
 
-    .button {
-      height: 48px;
-      padding: 11px 24px;
-      background-color: #f83f5a;
-      -webkit-transition: background-color .2s;
-      transition: background-color .2s;
-      font-size: 15px;
-      line-height: 24px;
-      font-weight: 700;
-    }
-
-    .w-button {
-      display: inline-block;
-      padding: 9px 15px;
-      background-color: #3898ec;
-      color: #fff;
-      border: 0;
-      line-height: inherit;
-      text-decoration: none;
-      cursor: pointer;
-      border-radius: 0;
-    }
 
     .w-container:after {
       clear: both;
     }
 
     .section.steps-section {
-      background-image: linear-gradient(180deg, rgba(17, 17, 17, .5), rgba(17, 17, 17, .5)), url(./../img/image/bnb\ A\ frame.jpg);
+      background-image: linear-gradient(180deg, rgba(17, 17, 17, .5), rgba(17, 17, 17, .5)), url(./../img/image/Modern\ living\ room.jpg);
+
+
       background-position: 0 0, 16% 49%;
       background-repeat: repeat, no-repeat;
       background-attachment: scroll, fixed;
@@ -5127,7 +5101,7 @@
       text-align: left;
     }
 
- 
+
 
     @media screen and (max-width: 991px) {
       h2 {
@@ -5161,9 +5135,15 @@
       flex-grow: 1;
       -webkit-flex-basis: 20%;
       -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-      border: 1px solid #fff;
+      flex-basis: 40%;
+      border: 1px #fff;
+      border-style: solid;
+      border-radius: 50%;
       text-align: left;
+    }
+
+    .step h5 {
+      text-align: center;
     }
 
     h5 {
@@ -5174,15 +5154,16 @@
       font-weight: 700;
     }
 
-    .paragraph-small.white-text {
-      color: #fff;
-    }
 
     .white-text {
       color: #fff;
     }
 
 
+    .paragraph-small.white-text {
+      color: #fff;
+      text-align: center;
+    }
 
     a:hover {
       color: #05160c;
@@ -5195,6 +5176,7 @@
 
     @media screen and (max-width: 767px) {
       .section-header {
+        color: var(--primary-color);
         margin-top: 16px;
       }
     }
@@ -5232,7 +5214,7 @@
 
     @media (min-width: 768px) and (max-width: 991px) {
       .steps-info {
-        width: 66.66%;
+        width: 100%;
         padding-right: 48px;
         padding-left: 48px;
       }
@@ -5500,21 +5482,9 @@
       flex-wrap: wrap;
     }
 
-    .button.top-margin {
-      margin-top: 16px;
-      background-color: #f83f5a;
-    }
 
-    .button {
-      height: 48px;
-      padding: 11px 24px;
-      background-color: #f83f5a;
-      -webkit-transition: background-color .2s;
-      transition: background-color .2s;
-      font-size: 15px;
-      line-height: 24px;
-      font-weight: 700;
-    }
+
+
 
     @media screen and (max-width: 991px) {
       .vertical-header {
@@ -5956,6 +5926,7 @@
     .paragraph-small {
       font-size: 14px;
       line-height: 24px;
+      text-align: center;
     }
 
     .footer-bottom-text-left {
@@ -6148,7 +6119,7 @@
       padding-right: 0;
       padding-left: 0;
       background-color: transparent;
-      color: #f83f5a;
+      color: var(--primary-color);
       font-size: 14px;
       line-height: 24px;
     }
@@ -6369,7 +6340,7 @@
     .button {
       height: 48px;
       padding: 11px 24px;
-      background-color: #f83f5a;
+      background-color: var(--primary-color);
       -webkit-transition: background-color .2s;
       transition: background-color .2s;
       font-size: 15px;
@@ -6377,17 +6348,7 @@
       font-weight: 700;
     }
 
-    .w-button {
-      display: inline-block;
-      padding: 9px 15px;
-      background-color: #3898ec;
-      color: #fff;
-      border: 0;
-      line-height: inherit;
-      text-decoration: none;
-      cursor: pointer;
-      border-radius: 0;
-    }
+
 
     .footer-logo {
       display: block;
@@ -6775,8 +6736,16 @@
 
     @media screen and (max-width: 767px) {
       .section {
-        padding-top: 80px;
+        padding-top: 70px;
         padding-bottom: 80px;
+      }
+
+      .product-offer .offer-text {
+        padding: 0px;
+      }
+
+      .framefrist {
+        margin-bottom: 150px;
       }
     }
 
@@ -6884,10 +6853,7 @@
       text-align: left;
     }
 
-    .button.top-margin {
-      margin-top: 16px;
-      background-color: #f83f5a;
-    }
+
 
     @media screen and (max-width: 479px) {
       .bg-text {
@@ -7407,25 +7373,13 @@
       margin-top: 8px;
     }
 
-    input.w-button {
-      -webkit-appearance: button;
-    }
 
-    .button {
-      height: 48px;
-      padding: 11px 24px;
-      background-color: #f83f5a !important;
-      -webkit-transition: background-color .2s;
-      transition: background-color .2s;
-      font-size: 15px;
-      line-height: 24px;
-      font-weight: 700;
-    }
+
 
     .w-button {
       display: inline-block;
       padding: 9px 15px;
-      background-color: #3898ec;
+      background-color: var(--primary-color);
       color: #fff;
       border: 0;
       line-height: inherit;
@@ -7600,7 +7554,8 @@
     }
 
     .steps-info {
-      width: 50%;
+      width: 100%;
+      border: 1px dashed;
       margin-bottom: 30px;
       padding: 5px 56px 16px;
       -webkit-box-flex: 0;
@@ -7618,25 +7573,36 @@
       }
 
     }
-    .imgfoot{
+
+    .imgfoot {
       max-height: 200px;
     }
-    .image-pricing{
 
-    
-    }
+    .image-pricing {}
+
     h3 {
-    display: block;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 700;
-}
-@media screen and (max-width: 991px){
-  h3 {
-    width: auto;
-    font-size: 24px;
-    line-height: 32px;
-}
-}
+      display: block;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 991px) {
+      h3 {
+        width: auto;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .btn:hover {
+      color: #fff !important;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .footerpara {
+      text-align: left;
+    }
