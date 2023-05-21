@@ -12,6 +12,7 @@
     body {
       font-family: "Poppins", sans-serif;
       color: #555555;
+      overflow-x: hidden;
     }
 
     :root {
@@ -2388,7 +2389,6 @@
       width: auto;
       margin-top: 0;
       color: var(--primary-color);
-
     }
 
     .center {
@@ -2445,7 +2445,7 @@
       box-shadow: 0 0 0 1px #e4e4e4;
     }
 
-  
+
 
     .feature-icon {
       width: 64px;
@@ -5397,7 +5397,7 @@
       }
 
       100% {
-        transform: translateY(-1em);
+        transform: translateY(-.7em);
       }
     }
 
@@ -5919,7 +5919,6 @@
     }
 
     .escoloredit {
-      background-color: #0000005c;
       color: #ffffff;
     }
 
@@ -6739,6 +6738,7 @@
         padding: 0px;
       }
     }
+
     @media screen and (max-width: 767px) {
       .section {
         padding-top: 70px;
@@ -7092,6 +7092,7 @@
       border-left: 1px solid #e4e4e4;
       background-color: #fff;
       box-shadow: 0 -4px 0 0 #ffb567;
+      max-width: 500px;
     }
 
     .pricing-header {
@@ -7405,9 +7406,7 @@
       transform: translate(-30px, -30px);
     }
 
-    .html-embed {
-      /* overflow: hidden; */
-    }
+
 
     @media screen and (max-width: 767px) {
       .side-feature-media {
@@ -7580,7 +7579,7 @@
       max-height: 200px;
     }
 
-    .image-pricing {}
+
 
     h3 {
       display: block;
@@ -7608,3 +7607,8 @@
     .footerpara {
       text-align: left;
     }
+    .shadowtext{
+      background-color: #00000096;
+      padding: 20px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+   }
