@@ -2367,7 +2367,7 @@
       max-width: 570px;
       margin-right: auto;
       margin-left: auto;
-      padding-bottom: 64px;
+      padding: 50px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -7612,3 +7612,9 @@
       padding: 20px;
       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
    }
+   input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   -webkit-appearance: "Always Show Up/Down Arrows";
+
+}
