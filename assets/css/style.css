@@ -6692,7 +6692,6 @@
     }
 
     .side-image-50.image-1 {
-      /* background-image: url(./../img/image/shutterstock_1713325651.jpg); */
       background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -7145,7 +7144,7 @@
     }
 
     .cards-section {
-      padding-top: 0;
+      padding-top: 50px;
       padding-bottom: 100px;
     }
 
@@ -7607,14 +7606,21 @@
     .footerpara {
       text-align: left;
     }
-    .shadowtext{
+
+    .shadowtext {
       background-color: #00000096;
       padding: 20px;
       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-   }
-   input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
+    }
 
-   -webkit-appearance: "Always Show Up/Down Arrows";
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
 
-}
+      -webkit-appearance: "Always Show Up/Down Arrows";
+
+    }
+
+    .linkclass {
+      border-radius: 10%;
+      background-color: #1c63f7;
+    }
