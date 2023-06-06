@@ -195,29 +195,28 @@
     </div>
     <div class="wrapper w-container">
       <div class="request w-form">
-        <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post"
-          class="request-form" aria-label="Contact Form">
+        <form   action="send_email.php" method="POST" class="request-form" >
           <div class="request-block-half"><label for="Name" class="form-label">Name:</label><input type="text"
-              class="input w-input" maxlength="256" name="Name" data-name="Name" placeholder="Enter your name" id="Name"
+              class="input w-input" maxlength="256" name="Name" placeholder="Enter your name" id="Name"
               required=""></div>
               <div class="request-block-half"><label for="address" class="form-label">Address:</label><input type="text"
-                class="input w-input" maxlength="256" name="address" data-name="address" placeholder="Enter your Address" id="Address"
+                class="input w-input" maxlength="256" name="address" placeholder="Enter your Address" id="Address"
                 required=""></div>
-          <div class="request-block-half"><label for="Email-3" class="form-label">Email:</label><input type="text"
-              class="input w-input" maxlength="256" name="Email-3" data-name="Email 3" placeholder="Your contact email"
-              id="Email-3" required=""></div>
-          <div class="request-block-half"><label for="Work" class="form-label">Phone Number:</label><input type="text"
-              class="input w-input" maxlength="256" name="Name-2" data-name="Name 2" placeholder="Phone Number"
-              id="Name-2" required=""></div>
+          <div class="request-block-half"><label for="Email" class="form-label">Email:</label><input type="text"
+              class="input w-input" maxlength="256" name="Email"  placeholder="Your contact email"
+              id="Email" required=""></div>
+          <div class="request-block-half"><label for="Phone" class="form-label">Phone Number:</label><input type="text"
+              class="input w-input" maxlength="256" name="Phone"  placeholder="Phone Number"
+              id="Phone" required=""></div>
               <div class="request-block-half"><label for="Bedrooms1" class="form-label"># of Bedrooms:</label><input type="number"
-                class="input w-input" maxlength="256" name="Bedrooms1" data-name="Bedrooms1"
-                id="Name-2" required=""></div>
+                class="input w-input" maxlength="256" name="Bedrooms1" 
+                id="Bedrooms1" required=""></div>
                 <div class="request-block-half"><label for="Bedrooms2" class="form-label"># of Bedrooms:</label><input   type="number"
-                  class="input w-input" maxlength="256" name="Bedrooms2" data-name="Bedrooms2" 
-                  id="Name-2" required=""></div>
+                  class="input w-input" maxlength="256" name="Bedrooms2" 
+                  id="Bedrooms2" required=""></div>
           <div class="request-block-half"></div>
           <div class="request-block-full"><label for="Message" class="form-label">Message:</label><textarea id="Message"
-              name="Message" placeholder="Input Comments..." maxlength="5000" data-name="Message"
+              name="Message" placeholder="Input Comments..." maxlength="5000"
               class="input text-area big w-input"></textarea></div>
               <input type="submit" value="Submit Message"
             data-wait="Please wait..." class="button form-button w-button">
@@ -272,9 +271,9 @@
         <div class="footer-subscribe">
           <h5>Subscribe to stay updated</h5>
           <div class="w-form">
-            <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form" data-name="Subscribe Form" method="get"
+            <form id="wf-form-Subscribe-Form" name="wf-form-Subscribe-Form"method="get"
               class="footer-subscribe-form" aria-label="Subscribe Form"><input type="email"
-                class="input footer-input w-input" maxlength="256" name="email" data-name="Email 2"
+                class="input footer-input w-input" maxlength="256" name="email" 
                 placeholder="Your email address" id="email-2" required=""><input type="submit" value="Subscribe"
                 data-wait="Please wait..." class="button w-button"></form>
             <div class="form-success w-form-done" tabindex="-1" role="region" aria-label="Subscribe Form success">
